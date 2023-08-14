@@ -1,0 +1,79 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+
+iframe {
+    height: 70vh;
+    width: 45vw;
+    border: none;
+}
+
+.result {
+    font-family: monospace;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 45vw;
+}
+
+.iframe-container {
+    display: flex;
+    /* Use flexbox to align iframes horizontally */
+}
+
+.center {
+    text-align: center;
+}
+
+.iframe-item {
+    flex: 1;
+    /* Distribute available space evenly between iframes */
+    margin-right: 5px;
+    /* Add some space between iframes */
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+span {
+    white-space: pre-wrap;
+}
+
+.red {
+    color: red;
+}
+
+.cyan {
+    color: blueviolet;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.yellow {
+    color: chocolate;
+}
+
+h1 {
+    text-align: center;
+    color: #eee;
+    background-color: #333;
+    padding: 10px;
+    margin: 0;
+}

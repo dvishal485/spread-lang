@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spreadsheet for dummies</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <h1>Spreadsheet For Dummies</h1>
+    <div>
+        <div class="iframe-container">
+            <div class="iframe-item">
+                <iframe id="table" src="./table.html" frameborder="0" scrolling="yes" height="100%"></iframe>
+            </div>
+            <div class="iframe-item">
+                <iframe id="plot" src="./plot.html" frameborder="0" scrolling="yes" height="100%"></iframe>
+            </div>
+        </div>
+        <br />
+        <div class="iframe-container">
+            <div class="result iframe-item" id="output-area"></div>
+            <br />
+            <div class="iframe-item center">
+                <textarea id="code"></textarea>
+                <br />
+                <button id="run">Run</button>
+            </div>
+        </div>
+    </div>
+    <script src="./dist/renderer.js"></script>
+</body>
+
+</html>
